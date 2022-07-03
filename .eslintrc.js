@@ -10,9 +10,13 @@ module.exports = {
   ],
   parserOptions: {
     parser: "@babel/eslint-parser",
+    requireConfigFile: false,
   },
   rules: {
     "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
     "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "vue/no-mutating-props": "off",
+    "space-before-function-paren": "off",
+    "vue/comment-directive": "off",
   },
 };
